@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="page2.css">
+    <title>Welcome to my website</title>
+  </head>
+
+  <style>
+  body {
+    background-color: rgb(131, 191, 248);
+  }
+
+  h1 {
+    color: blue;
+  }
+
+  h2 {
+    color: red;
+  }
+  </style>
+
+  <body>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <!--Navigation-->
+    <a href="file:///C:/Users/jason/OneDrive/Documents/website/page1.html">Music I Like</a> <a href="file:///C:/Users/jason/OneDrive/Documents/website/index.html">Back to Home</a>
+    <a href="file:///C:/Users/jason/OneDrive/Documents/website/page3.html">Dinosaur Slideshow!</a> <a href="file:///C:/Users/jason/OneDrive/Documents/website/page4.html">Pokemon Evolution!</a>
+    
+    <!--List of my favorite things in general-->
+    <h1>Here are some things I like:</h1>
+    <li>Pokémon</li>
+    <li>Dinosaurs</li>
+    <li>Video Games</li>
+    <li>Mountain Biking</li>
+    
+    <h1>The specifics are:</h2>
+
+    <!--List of my favorite Pokémon-->
+    <h2>My 5 favorite Pokémon:</h2>
+    <ol>
+    <li>Charizard</li>
+    <li>Greninja</li>
+    <li>Tyrantrum</li>
+    <li>Lucario</li>
+    <li>Hisuian Zoroark</li>
+    </ol>
+
+    <!--Pokémon image-->
+    <img id="charizard" src="https://upload.wikimedia.org/wikipedia/en/1/1f/Pok%C3%A9mon_Charizard_art.png" width="203">
+
+    <!--List of my favorite dinosaurs-->
+    <h2>My 5 favorite dinosaur species:</h2>
+    <ol>
+    <li>Tyrannosaurus rex</li>
+    <li>Velociraptor</li>
+    <li>Allosaurus</li>
+    <li>Carcharodontosaurus</li>
+    <li>Pyroraptor</li>
+    </ol>
+
+    <!--Dinosaur image-->
+    <img id="trex" src="https://d1zb04s4od4oai.cloudfront.net/eyJidWNrZXQiOiJmcm9udGllci1jbXMiLCJrZXkiOiIyMDIxLTA5L3R5cmFubm9zYXVydXNyZXgucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjozMDB9fX0=" width="203">
+
+    <!--List of my favorite video games-->
+    <h2>My 5 favorite video games:</h2>
+    <ol>
+    <li>Jurassic World Evolution 2</li>
+    <li>Forza Horizon 4 & 5</li>
+    <li>Super Smash Bros. Ultimate</li>
+    <li>Terraria</li>
+    <li>Mario Kart 8</li>
+    </ol>
+
+    <!--Video game image-->
+    <img id="ssbu" src="https://assets.nintendo.eu/image/upload/f_auto,q_auto,t_product_tile_desktop/MNS/NOE/70010000012331/SQ_NSwitch_SuperSmashBrosUltimate" width="203">
+
+    <script>
+    //Charizard movement
+    var $pic = $("#charizard");
+      $pic.hide();
+    $pic.slideDown(1000, function() {
+        var charizard = $("<p>");
+    });
+
+    //T. rex movement
+    var $pic = $("#trex");
+      $pic.hide();
+    $pic.slideDown(1000, function() {
+        var trex = $("<p>");
+    });
+
+    //SSBU movement
+    var $pic = $("#ssbu");
+      $pic.hide();
+    $pic.slideDown(1000, function() {
+        var ssbu = $("<p>");
+    });
+    </script>
+
+  </body>
+</html>

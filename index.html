@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8">
+    <title>Welcome to my website</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+  </head>
+
+  <style>
+  body {
+     background-color: rgb(131, 191, 248);
+  }
+
+  h1 {
+     color: blue;
+  }
+
+  h3 {
+    color: blue;
+  }
+  </style>
+
+  <body>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+    <!--Navigation-->
+    <a href="file:///C:/Users/jason/OneDrive/Documents/website/page1.html">Music I Like</a> <a href="file:///C:/Users/jason/OneDrive/Documents/website/page2.html">Other Things I Like</a>
+    <a href="file:///C:/Users/jason/OneDrive/Documents/website/page3.html">Dinosaur Slideshow!</a> <a href="file:///C:/Users/jason/OneDrive/Documents/website/page4.html">Pokemon Evolution!</a>
+    
+    <!--Text-->
+    <h1>Things to Know About Jason DeLo</h1>
+    <p>My name is <strong>Jason DeLo</strong>. I am a tall, young man who enjoys hanging out with friends and playing games. I have two cats whose names are <strong>Moxie</strong> and <strong>Maggie</strong>. I also have a fish tank in
+    <br>my room containing <strong>African cichlids</strong>, which I will grow and later put into my Dad's larger tank.</p>
+    <p>In terms of my personality, I am funny, social, and smart.</p>
+    <p>I've made good grades for pretty much all of my time in school.</p>
+    <p>Use the links at the top of the page to find out a bit about what I like!</p>
+    <br>
+    <br>
+    <!--Word game text-->
+    <h3>Unscramble these letters to find my favorite nighttime snack!</h3>
+    <form id="joke-form">
+        <label>
+            <span class="scrambled">REYJUQ</span>
+            <br>
+            <input type="text" size="10">
+        </label>
+        <button type="submit">Check</button>
+    </form>
+    <h4 id = "message"></h4>
+
+    <script>
+      //Scrambled / unscrambled word
+      var scrambledLetters = ["NCPPORO"];
+      var answers = ["popcorn"]
+      
+        //Show scrambled letters
+          $(".scrambled").text(scrambledLetters[0]);
+          var correctAnswer = answers[0];
+          
+          //User submits
+          $("#joke-form").on("submit", function(event){
+          event.preventDefault();
+          var $answer = $(this).find("[type=text]");
+          var answer = $answer.val();
+          
+          console.log(correctAnswer);
+          
+          //Response to user input
+          if(answer === correctAnswer){
+              $("#message").text("Nice, you got it!")
+              
+          } else {
+              $("#message").text("Not quite, keep trying!")
+          }
+          
+      })
+  </script>
+  </body>
+</html>

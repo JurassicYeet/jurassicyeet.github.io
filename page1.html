@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="page1.css">
+    <title>Welcome to my website</title>
+  </head>
+  <style>
+    body {
+    background-color: rgb(131, 191, 248);
+  }
+  
+  h1 {
+      color: blue;
+  }
+  </style>
+
+  <body>
+    
+    <!--<script type="text/javascript" src="page1.js"></script>-->
+    <!--Navigation-->
+    <a href="file:///C:/Users/jason/OneDrive/Documents/website/index.html">Back to Home</a> <a href="file:///C:/Users/jason/OneDrive/Documents/website/page2.html">Other Things I Like</a>
+    <a href="file:///C:/Users/jason/OneDrive/Documents/website/page3.html">Dinosaur Slideshow!</a> <a href="file:///C:/Users/jason/OneDrive/Documents/website/page4.html">Pokemon Evolution!</a>
+    
+    <!--List of my favorite music artists-->
+    <h1>Some bands / music artists I like:</h1>
+
+      <li>Metallica</li>
+      <li>Godsmack</li>
+      <li>Pantera</li>
+      <li>Slipknot</li>
+      <li>Rob Zombie</li>
+      <li>Slayer</li>
+      <li>Cult to Follow</li>
+      <li>Skillet</li>
+      <li>Blacklite District</li>
+      <li>Joan Jett</li>
+      <li>Michael Jackson</li>
+      <li>Three Days Grace</li>
+      <li>IRIS / DAGames</li>
+
+    <!--List of my 15 favorite songs and the artists who made them-->
+    <h1>My 15 favorite songs:</h1>
+    <ol>
+      <li><strong>King Nothing</strong> by Metallica</li>
+      <li><strong>Destroyer</strong> by Skillet</li>
+      <li><strong>Exile</strong> by Slayer</li>
+      <li><strong>Psychosocial</strong> by Slipknot</li>
+      <li><strong>The Truimph of King Freak</strong> by Rob Zombie</li>
+      <li><strong>War Zone</strong> by Slayer</li>
+      <li><strong>Vengeance</strong> by IRIS</li>
+      <li><strong>Here Comes Revenge</strong> by Metallica</li>
+      <li><strong>I Hate Myself For Loving You</strong> by Joan Jett</li>
+      <li><strong>I Blame You</strong> by Godsmack</li>
+      <li><strong>Heart of an Artist</strong> by DAGames</li>
+      <li><strong>Eye of The Storm</strong> by Godsmack</li>
+      <li><strong>So Called Life</strong> by Three Days Grace</li>
+      <li><strong>Leave it All Behind</strong> by Cult to Follow</li>
+      <li><strong>Before I Forget</strong> by Slipknot</li>
+    </ol>
+
+      <!--Images of album covers-->
+      <img id="album-dotd" src="http://cdn.shopify.com/s/files/1/2385/7749/products/DawnoftheDimetrix_1200x1200.png?v=1629380174" width="203"> <img id="album-d" src="https://m.media-amazon.com/images/I/71HsKWei4gL._SL1425_.jpg" width="203">
+      <img id="album-tlikaec" src="https://m.media-amazon.com/images/I/91hErXkKGPL._SL1500_.jpg" width="203">
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+      
+      <script>
+      //Dawn of the Dimetrix movement
+      var $pic = $("#album-dotd");
+      $pic.hide();
+    $pic.slideDown(1000, function() {
+        var dotd = $("<p>");
+        dotd.text("Dawn of the Dimetrix");
+        dotd.css("fontSize", "18px");
+        dotd.css("color", "black");
+        $("body").append(dotd);
+    });
+
+    //Dominion movement
+    var $pic = $("#album-d");
+      $pic.hide();
+    $pic.slideDown(1000, function() {
+        var d = $("<p>");
+        d.text("Dominion");
+        d.css("fontSize", "18px");
+        d.css("color", "black");
+        $("body").append(d);
+    });
+
+    //The Lunar Injection Kool Aid Eclipse Conspiracy movement
+    var $pic = $("#album-tlikaec");
+      $pic.hide();
+    $pic.slideDown(1000, function() {
+        var tlikaec = $("<p>");
+        tlikaec.text("The Lunar Injection Kool Aid Eclipse Conspiracy");
+        tlikaec.css("fontSize", "18px");
+        tlikaec.css("color", "black");
+        $("body").append(tlikaec);
+    });
+  </script>
+
+  </body>
+</html>

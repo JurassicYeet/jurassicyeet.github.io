@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Spin-off of "Project: Scene change"</title>
+        <style>
+        #helioptile {
+            position: absolute;
+            width: 150px;
+            top: 410px;
+            left: 678px;
+        }
+        
+        #riolu {
+            position: absolute;
+            width:170px;
+            top: 120px;
+            left:270px;
+        }
+        
+        #zorua-h {
+            position: absolute;
+            width: 170px;
+            top: 350px;
+            left: 270px;
+        }
+
+        body{
+            background-color: rgb(131, 191, 248);
+        }
+
+        h1{
+            color: blue;
+        }
+        </style>
+    </head>
+    <body>
+
+        <!--Navigation-->
+        <a href="file:///C:/Users/jason/OneDrive/Documents/website/page1.html">Music I Like</a> <a href="file:///C:/Users/jason/OneDrive/Documents/website/page2.html">Other Things I like</a>
+        <a href="file:///C:/Users/jason/OneDrive/Documents/website/index.html">Dinosaur Slideshow!</a> <a href="file:///C:/Users/jason/OneDrive/Documents/website/index.html">Back to Home</a>
+        <br>
+
+        <!--Heading-->
+        <h1>Click the Pokémon to make them evolve...</h1>
+
+    <img src="https://cutewallpaper.org/21/pokemon-landscape-background/Pokemon-forest-by-BlazingIfrit-Fur-Affinity-dot-net.jpg">
+
+    <img src="https://pokestop.io/img/pokemon/helioptile-256x256.png" id="helioptile">
+    
+    <img src="https://gameplayerr.com/wp-content/uploads/2020/11/How-to-Evolve-Riolu-Pokemon-Sword-and-Shield.png" id="riolu">
+    
+    <img src="https://image.cosplayfu.com/b/90945-Hisuian-Zoroark-Plush-2nd-from-Pokemon-1-1.jpg" id="zorua-h">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script>
+        $("#helioptile").on("click", function(event) {
+            $("#helioptile").attr("src", "https://static.wikia.nocookie.net/total-pokemon-amazon/images/9/9c/Heliolisk.png/revision/latest?cb=20150107174419")
+            $("#helioptile").css("left", 180 + "px");
+            $("#helioptile").css("top", 350 + "px");
+            $("#helioptile").css("width", "230px");
+        });
+        
+        $("#riolu").on("click", function(event) {
+            $("#riolu").attr("src", "https://i.pinimg.com/originals/8a/51/46/8a51463aa43d11854058f5adffcb507e.png")
+            $("#riolu").css("left", 410 + "px");
+            $("#riolu").css("top", 270 + "px");
+        });
+        
+        $("#zorua-h").on("click", function(event) {
+            $("#zorua-h").attr("src", "https://i0.wp.com/mynintendonews.com/wp-content/uploads/2021/10/Pokemon_Legends_Hisuian_Zoroark.png?resize=840%2C979&ssl=1")
+            $("#zorua-h").css("left", 540 + "px");
+            $("#zorua-h").css("top", 210 + "px");
+            $("#zorua-h").css("width", "430px");
+        });
+    </script>
+    </body>
+</html>
